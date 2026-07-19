@@ -1,0 +1,591 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background: #EEEAE3;
+
+    color: #33363A;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+/* Main Layout */
+
+.page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 45px 25px;
+
+}
+
+
+
+.content {
+
+    width: 100%;
+
+    max-width: 380px;
+
+    text-align: center;
+
+}
+
+
+
+
+
+/* Couple Initials */
+
+.monogram {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 42px;
+
+    font-weight: 400;
+
+    letter-spacing: 6px;
+
+}
+
+
+
+.monogram span {
+
+    color: #8FAFC4;
+
+}
+
+
+
+
+
+/* Date */
+
+.date {
+
+    margin-top: 18px;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #6F7478;
+
+}
+
+
+
+
+
+/* Divider */
+
+.divider {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #8FAFC4;
+
+    margin: 32px auto;
+
+}
+
+
+
+
+
+/* Welcome */
+
+h1 {
+
+    font-family: 'Parisienne', cursive;
+
+    font-size: 62px;
+
+    font-weight: 400;
+
+    margin: 0 0 12px;
+
+    color: #33363A;
+
+}
+
+
+
+
+
+/* Subtitle */
+
+.subtitle {
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    line-height: 1.8;
+
+    color: #6F7478;
+
+    margin-bottom: 45px;
+
+}
+
+
+
+
+
+/* Search Area */
+
+.search-area {
+
+    position: relative;
+
+}
+
+
+
+
+
+/* Input Label */
+
+label {
+
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+    color: #55595C;
+
+}
+
+
+
+
+
+/* Input */
+
+input {
+
+    width: 100%;
+
+    padding: 16px;
+
+    background: #F7F4EF;
+
+    border: 1px solid #D8D0C5;
+
+    border-radius: 4px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    color: #33363A;
+
+    outline: none;
+
+}
+
+
+
+input::placeholder {
+
+    color: #9A9A9A;
+
+}
+
+
+
+input:focus {
+
+    border-color: #8FAFC4;
+
+}
+
+
+
+
+
+/* Button */
+
+button {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background: #8FAFC4;
+
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    transition: opacity 0.2s ease;
+
+}
+
+
+
+button:hover {
+
+    opacity: 0.9;
+
+}
+
+
+
+
+
+/* Autocomplete Suggestions */
+
+.suggestions {
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    width: 100%;
+
+    margin-top: 8px;
+
+    background: #F7F4EF;
+
+    border: 1px solid #D8D0C5;
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    z-index: 20;
+
+    box-shadow: 0 8px 20px rgba(51,54,58,0.08);
+
+}
+
+
+
+.suggestions div {
+
+    padding: 15px 18px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    color: #33363A;
+
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+
+
+.suggestions div:hover {
+
+    background: #E5EDF2;
+
+}
+
+
+
+
+
+/* Result */
+
+.hidden {
+
+    display: none;
+
+}
+
+
+
+.result {
+
+    margin-top: 20px;
+
+    animation: fadeIn 0.6s ease;
+
+}
+
+
+
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(12px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* Guest Name */
+
+.guest-name {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 42px;
+
+    font-weight: 400;
+
+    margin-top: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+/* Labels */
+
+.label {
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #6F7478;
+
+}
+
+
+
+
+
+/* Table Number */
+
+.number {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 72px;
+
+    font-weight: 300;
+
+    line-height: 1;
+
+    letter-spacing: 3px;
+
+    color: #8FAFC4;
+
+    margin-top: 18px;
+
+    margin-bottom: 45px;
+
+}
+
+
+
+
+
+/* Seated With / Family Titles */
+
+.party-title {
+
+    margin-top: 45px;
+
+    margin-bottom: 18px;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #6F7478;
+
+}
+
+
+
+
+
+.family-title {
+
+    margin-top: 50px;
+
+}
+
+
+
+
+
+.family-subtitle {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #9A9A9A;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+/* Party Names */
+
+.party {
+
+    padding-top: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 13px;
+
+    line-height: 2.2;
+
+    letter-spacing: 1.5px;
+
+    color: #6F7478;
+
+}
+
+
+
+
+
+/* Closing */
+
+.closing {
+
+    margin-top: 45px;
+
+    font-family: 'Parisienne', cursive;
+
+    font-size: 32px;
+
+    color: #33363A;
+
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+
+    margin-top: 55px;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #6F7478;
+
+}
+
+
+
+
+
+/* =========================
+   SMOOTH PAGE TRANSFORMATION
+========================= */
+
+
+.search-area,
+h1,
+.subtitle,
+.divider {
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease,
+        max-height 0.5s ease,
+        margin 0.5s ease;
+
+}
+
+
+
+
+
+.hide-search {
+
+    opacity: 0;
+
+    transform: translateY(-20px);
+
+    pointer-events: none;
+
+}
+
+
+
+
+
+.search-area.hide-search {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    margin: 0;
+
+}
