@@ -12,7 +12,8 @@ export const wedding = {
     // =============================
 
     apiUrl:
-    "https://script.google.com/macros/s/YOUR_SCRIPT_URL/exec",
+    "https://script.google.com/macros/s/AKfycbyJrWAkpZJYM9YJGHV4SEnlPAVwHOODte_ElMVXSqfvY1grxSGUC3lY_U6bN2CNAOxW/exec",
+
 
 
 
@@ -22,7 +23,7 @@ export const wedding = {
     // =============================
 
     coupleNames:
-    "Amanda & Alex",
+    "Alice & Anthony",
 
 
     coupleInitials:
@@ -30,7 +31,7 @@ export const wedding = {
 
 
     weddingDate:
-    "25 SEPTEMBER 2027",
+    "21 SEPTEMBER 2026",
 
 
     venue:
