@@ -6,7 +6,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>A & A | Find Your Table</title>
+
+<title>Wedding Seating Finder</title>
 
 
 <link rel="stylesheet" href="style.css">
@@ -23,6 +24,7 @@
 </head>
 
 
+
 <body>
 
 
@@ -32,27 +34,36 @@
 <section class="content">
 
 
-<div class="monogram">
-A <span>+</span> A
+
+<div class="monogram" id="coupleInitials">
+
 </div>
 
 
-<div class="date">
-25 SEPTEMBER 2027
+
+<div class="date" id="weddingDate">
+
 </div>
+
 
 
 <div class="divider"></div>
 
 
-<h1>
-Welcome
+
+
+<h1 id="welcomeTitle">
+
 </h1>
 
 
-<p class="subtitle">
-Find your table for the celebration
+
+
+<p class="subtitle" id="welcomeSubtitle">
+
 </p>
+
+
 
 
 
@@ -64,8 +75,8 @@ Find your table for the celebration
 
 
 
-<label>
-ENTER YOUR NAME
+<label id="searchLabel">
+
 </label>
 
 
@@ -74,8 +85,6 @@ ENTER YOUR NAME
 <input
 
 type="text"
-
-placeholder="Your name"
 
 id="guestName"
 
@@ -87,9 +96,7 @@ autocomplete="off"
 
 
 
-<button type="submit">
-
-VIEW TABLE
+<button type="submit" id="searchButton">
 
 </button>
 
@@ -125,7 +132,9 @@ VIEW TABLE
 
 
 
-<script src="app.js"></script>
+
+<script type="module" src="app.js"></script>
+
 
 
 </body>
