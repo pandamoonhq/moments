@@ -79,9 +79,13 @@ document.title =
 wedding.pageTitle;
 
 
-document.getElementById("coupleInitials").innerHTML =
-wedding.coupleInitials;
+const initials = wedding.coupleInitials.split("+");
 
+document.getElementById("coupleInitials").innerHTML = `
+    <span class="initial">${initials[0].trim()}</span>
+    <span class="plus">+</span>
+    <span class="initial">${initials[1].trim()}</span>
+`;
 
 document.getElementById("weddingDate").innerHTML =
 wedding.weddingDate;
