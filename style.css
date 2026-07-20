@@ -1,6 +1,46 @@
-* {
-    box-sizing: border-box;
+/* =============================
+   WEDDING THEME VARIABLES
+============================= */
+
+:root {
+
+    --background: #EEEAE3;
+
+    --text: #33363A;
+
+    --muted-text: #6F7478;
+
+    --light-text: #9A9A9A;
+
+    --accent: #8FAFC4;
+
+    --accent-light: #E5EDF2;
+
+    --card: #F7F4EF;
+
+    --border: #D8D0C5;
+
+
+    /* Fonts */
+
+    --body-font: 'Montserrat', sans-serif;
+
+    --heading-font: 'Cormorant Garamond', serif;
+
+    --script-font: 'Parisienne', cursive;
+
 }
+
+
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
 
 
 body {
@@ -9,11 +49,11 @@ body {
 
     min-height: 100vh;
 
-    background: #EEEAE3;
+    background: var(--background);
 
-    color: #33363A;
+    color: var(--text);
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body-font);
 
 }
 
@@ -55,7 +95,7 @@ body {
 
 .monogram {
 
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--heading-font);
 
     font-size: 42px;
 
@@ -69,7 +109,7 @@ body {
 
 .monogram span {
 
-    color: #8FAFC4;
+    color: var(--accent);
 
 }
 
@@ -87,7 +127,7 @@ body {
 
     letter-spacing: 4px;
 
-    color: #6F7478;
+    color: var(--muted-text);
 
 }
 
@@ -103,7 +143,7 @@ body {
 
     height: 1px;
 
-    background: #8FAFC4;
+    background: var(--accent);
 
     margin: 32px auto;
 
@@ -117,7 +157,7 @@ body {
 
 h1 {
 
-    font-family: 'Parisienne', cursive;
+    font-family: var(--script-font);
 
     font-size: 62px;
 
@@ -125,7 +165,7 @@ h1 {
 
     margin: 0 0 12px;
 
-    color: #33363A;
+    color: var(--text);
 
 }
 
@@ -143,7 +183,7 @@ h1 {
 
     line-height: 1.8;
 
-    color: #6F7478;
+    color: var(--muted-text);
 
     margin-bottom: 45px;
 
@@ -177,7 +217,7 @@ label {
 
     margin-bottom: 15px;
 
-    color: #55595C;
+    color: var(--muted-text);
 
 }
 
@@ -193,19 +233,19 @@ input {
 
     padding: 16px;
 
-    background: #F7F4EF;
+    background: var(--card);
 
-    border: 1px solid #D8D0C5;
+    border: 1px solid var(--border);
 
     border-radius: 4px;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body-font);
 
     font-size: 14px;
 
     text-align: center;
 
-    color: #33363A;
+    color: var(--text);
 
     outline: none;
 
@@ -215,7 +255,7 @@ input {
 
 input::placeholder {
 
-    color: #9A9A9A;
+    color: var(--light-text);
 
 }
 
@@ -223,7 +263,7 @@ input::placeholder {
 
 input:focus {
 
-    border-color: #8FAFC4;
+    border-color: var(--accent);
 
 }
 
@@ -245,11 +285,11 @@ button {
 
     border-radius: 4px;
 
-    background: #8FAFC4;
+    background: var(--accent);
 
     color: white;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body-font);
 
     font-size: 11px;
 
@@ -287,9 +327,9 @@ button:hover {
 
     margin-top: 8px;
 
-    background: #F7F4EF;
+    background: var(--card);
 
-    border: 1px solid #D8D0C5;
+    border: 1px solid var(--border);
 
     border-radius: 4px;
 
@@ -311,7 +351,7 @@ button:hover {
 
     letter-spacing: 1px;
 
-    color: #33363A;
+    color: var(--text);
 
     text-align: center;
 
@@ -323,7 +363,7 @@ button:hover {
 
 .suggestions div:hover {
 
-    background: #E5EDF2;
+    background: var(--accent-light);
 
 }
 
@@ -382,7 +422,7 @@ button:hover {
 
 .guest-name {
 
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--heading-font);
 
     font-size: 42px;
 
@@ -406,7 +446,7 @@ button:hover {
 
     letter-spacing: 4px;
 
-    color: #6F7478;
+    color: var(--muted-text);
 
 }
 
@@ -418,7 +458,7 @@ button:hover {
 
 .number {
 
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--heading-font);
 
     font-size: 72px;
 
@@ -428,7 +468,7 @@ button:hover {
 
     letter-spacing: 3px;
 
-    color: #8FAFC4;
+    color: var(--accent);
 
     margin-top: 18px;
 
@@ -452,7 +492,7 @@ button:hover {
 
     letter-spacing: 4px;
 
-    color: #6F7478;
+    color: var(--muted-text);
 
 }
 
@@ -476,7 +516,7 @@ button:hover {
 
     letter-spacing: 2px;
 
-    color: #9A9A9A;
+    color: var(--light-text);
 
     margin-bottom: 20px;
 
@@ -492,7 +532,7 @@ button:hover {
 
     padding-top: 5px;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body-font);
 
     font-size: 13px;
 
@@ -500,7 +540,7 @@ button:hover {
 
     letter-spacing: 1.5px;
 
-    color: #6F7478;
+    color: var(--muted-text);
 
 }
 
@@ -514,11 +554,11 @@ button:hover {
 
     margin-top: 45px;
 
-    font-family: 'Parisienne', cursive;
+    font-family: var(--script-font);
 
     font-size: 32px;
 
-    color: #33363A;
+    color: var(--text);
 
 }
 
@@ -536,7 +576,7 @@ footer {
 
     letter-spacing: 5px;
 
-    color: #6F7478;
+    color: var(--muted-text);
 
 }
 
