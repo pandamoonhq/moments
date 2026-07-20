@@ -96,23 +96,23 @@ body {
 .monogram {
 
     font-family: var(--heading-font);
-
     font-size: 42px;
-
     font-weight: 400;
-
     letter-spacing: 6px;
 
 }
 
+.monogram .initial {
 
+    color: var(--text);
 
-.monogram span {
+}
+
+.monogram .plus {
 
     color: var(--accent);
 
 }
-
 
 
 
