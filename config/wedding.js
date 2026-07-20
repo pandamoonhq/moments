@@ -16,11 +16,55 @@ export const wedding = {
     coupleNames:
     "Amanda & Alex",
 
+    coupleInitials:
+    "A + A",
+
     weddingDate:
-    "25 September 2027",
+    "25 SEPTEMBER 2027",
 
     venue:
     "Your Venue",
+
+
+
+    // =============================
+    // PAGE SETTINGS
+    // =============================
+
+    pageTitle:
+    "A & A | Find Your Table",
+
+
+
+    // =============================
+    // WELCOME SECTION
+    // =============================
+
+    welcome: {
+
+        title:
+        "Welcome",
+
+        subtitle:
+        "Find your table for the celebration"
+
+    },
+
+
+
+    // =============================
+    // SEARCH SECTION
+    // =============================
+
+    search: {
+
+        label:
+        "ENTER YOUR NAME",
+
+        placeholder:
+        "Your name"
+
+    },
 
 
 
