@@ -1,4 +1,17 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbwHNdTlDchoC6JMk-_-4kFQBZ2ir7sgksbBJV79KHCDI1VvIVLw_Y_6UMHTQBy6ys146A/exec";
+import { wedding } from "./config/wedding.js";
+
+
+// =============================
+// CONFIGURATION
+// =============================
+
+const API_URL = wedding.apiUrl;
+
+
+console.log(
+    `${wedding.coupleNames} Wedding Seating Finder Loaded`
+);
+
 
 
 const input = document.getElementById("guestName");
@@ -47,7 +60,9 @@ form.addEventListener("submit", async (event) => {
 
     if(!selectedGuest){
 
-        alert("Please enter your name");
+        alert(
+            wedding.messages.emptyName
+        );
 
         return;
 
@@ -271,7 +286,7 @@ async function findTable(){
 
 
     button.innerText =
-        "FINDING YOUR TABLE...";
+        wedding.buttons.searching;
 
 
     button.disabled = true;
@@ -312,7 +327,9 @@ async function findTable(){
 
         if(!data.found){
 
-            alert("Guest not found");
+            alert(
+                wedding.messages.guestNotFound
+            );
 
             return;
 
@@ -415,7 +432,7 @@ async function findTable(){
 
         <div class="label">
 
-            YOUR TABLE
+            ${wedding.labels.yourTable}
 
         </div>
 
@@ -433,6 +450,7 @@ async function findTable(){
 
 
         ${
+            wedding.features.showSameTableGuests &&
             sameTable.length
 
             ?
@@ -441,7 +459,7 @@ async function findTable(){
 
             <div class="party-title">
 
-                SEATED WITH
+                ${wedding.labels.seatedWith}
 
             </div>
 
@@ -470,6 +488,7 @@ async function findTable(){
 
 
         ${
+            wedding.features.showOtherTables &&
             otherTables.length
 
             ?
@@ -478,7 +497,7 @@ async function findTable(){
 
             <div class="party-title family-title">
 
-                FAMILY & FRIENDS
+                ${wedding.labels.familyFriends}
 
             </div>
 
@@ -486,7 +505,7 @@ async function findTable(){
 
             <div class="family-subtitle">
 
-                Other tables
+                ${wedding.labels.otherTables}
 
             </div>
 
@@ -518,7 +537,7 @@ async function findTable(){
 
         <p class="closing">
 
-            Enjoy the evening
+            ${wedding.labels.closing}
 
         </p>
 
@@ -538,7 +557,7 @@ async function findTable(){
 
 
         alert(
-            "Something went wrong. Please try again."
+            wedding.messages.error
         );
 
 
@@ -547,7 +566,7 @@ async function findTable(){
 
 
         button.innerText =
-            "VIEW TABLE";
+            wedding.buttons.default;
 
 
         button.disabled =
