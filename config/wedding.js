@@ -1,4 +1,11 @@
+// =============================
+// WEDDING CONFIGURATION
+// Change this file for each wedding
+// =============================
+
+
 export const wedding = {
+
 
     // =============================
     // GOOGLE SHEET CONNECTION
@@ -9,6 +16,7 @@ export const wedding = {
 
 
 
+
     // =============================
     // WEDDING DETAILS
     // =============================
@@ -16,14 +24,18 @@ export const wedding = {
     coupleNames:
     "Amanda & Alex",
 
+
     coupleInitials:
     "A + A",
+
 
     weddingDate:
     "25 SEPTEMBER 2027",
 
+
     venue:
     "Your Venue",
+
 
 
 
@@ -36,6 +48,7 @@ export const wedding = {
 
 
 
+
     // =============================
     // WELCOME SECTION
     // =============================
@@ -45,10 +58,12 @@ export const wedding = {
         title:
         "Welcome",
 
+
         subtitle:
         "Find your table for the celebration"
 
     },
+
 
 
 
@@ -61,10 +76,13 @@ export const wedding = {
         label:
         "ENTER YOUR NAME",
 
+
         placeholder:
         "Your name"
 
     },
+
+
 
 
 
@@ -77,10 +95,13 @@ export const wedding = {
         searching:
         "FINDING YOUR TABLE...",
 
+
         default:
         "VIEW TABLE"
 
     },
+
+
 
 
 
@@ -93,8 +114,10 @@ export const wedding = {
         emptyName:
         "Please enter your name",
 
+
         guestNotFound:
-        "Guest not found",
+        "Guest not found. Please try again.",
+
 
         error:
         "Something went wrong. Please try again."
@@ -103,8 +126,10 @@ export const wedding = {
 
 
 
+
+
     // =============================
-    // RESULT LABELS
+    // RESULT SECTION
     // =============================
 
     labels: {
@@ -112,14 +137,18 @@ export const wedding = {
         yourTable:
         "YOUR TABLE",
 
+
         seatedWith:
         "SEATED WITH",
+
 
         familyFriends:
         "FAMILY & FRIENDS",
 
+
         otherTables:
         "Other tables",
+
 
         closing:
         "Enjoy the evening ✨"
@@ -128,21 +157,105 @@ export const wedding = {
 
 
 
+
+
     // =============================
-    // FEATURES
+    // FEATURE TOGGLES
     // =============================
 
     features: {
 
+
+        // Show guests seated at the same table
+
         showSameTableGuests:
         true,
+
+
+
+        // Show family/friends at other tables
 
         showOtherTables:
         true,
 
+
+
+        // Future option
+
         showVenueMap:
         false
 
+    },
+
+
+
+
+
+    // =============================
+    // VISUAL THEME
+    // Controls style.css
+    // =============================
+
+    theme: {
+
+
+        background:
+        "#EEEAE3",
+
+
+        text:
+        "#33363A",
+
+
+        mutedText:
+        "#6F7478",
+
+
+        lightText:
+        "#9A9A9A",
+
+
+        accent:
+        "#8FAFC4",
+
+
+        accentLight:
+        "#E5EDF2",
+
+
+        card:
+        "#F7F4EF",
+
+
+        border:
+        "#D8D0C5"
+
+    },
+
+
+
+
+
+    // =============================
+    // FONTS
+    // =============================
+
+    fonts: {
+
+
+        body:
+        "'Montserrat', sans-serif",
+
+
+        heading:
+        "'Cormorant Garamond', serif",
+
+
+        script:
+        "'Parisienne', cursive"
+
     }
+
+
 
 };
