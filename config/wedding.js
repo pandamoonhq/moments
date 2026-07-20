@@ -12,7 +12,7 @@ export const wedding = {
     // =============================
 
     apiUrl:
-    "https://script.google.com/macros/s/AKfycbyJrWAkpZJYM9YJGHV4SEnlPAVwHOODte_ElMVXSqfvY1grxSGUC3lY_U6bN2CNAOxW/exec",
+    "https://script.google.com/macros/s/AKfycbyCHfIUgDsRc4LKNMz9DigJGfajGpYPQxs0nM2jyvBGQscYk4xF_EAkkAh8h-9bPMFy/exec",
 
 
 
