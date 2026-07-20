@@ -2,6 +2,114 @@ import { wedding } from "./config/wedding.js";
 
 
 // =============================
+// LOAD WEDDING THEME
+// =============================
+
+const root = document.documentElement;
+
+
+root.style.setProperty(
+    "--background",
+    wedding.theme.background
+);
+
+root.style.setProperty(
+    "--text",
+    wedding.theme.text
+);
+
+root.style.setProperty(
+    "--muted-text",
+    wedding.theme.mutedText
+);
+
+root.style.setProperty(
+    "--light-text",
+    wedding.theme.lightText
+);
+
+root.style.setProperty(
+    "--accent",
+    wedding.theme.accent
+);
+
+root.style.setProperty(
+    "--accent-light",
+    wedding.theme.accentLight
+);
+
+root.style.setProperty(
+    "--card",
+    wedding.theme.card
+);
+
+root.style.setProperty(
+    "--border",
+    wedding.theme.border
+);
+
+
+
+// =============================
+// LOAD WEDDING FONTS
+// =============================
+
+root.style.setProperty(
+    "--body-font",
+    wedding.fonts.body
+);
+
+root.style.setProperty(
+    "--heading-font",
+    wedding.fonts.heading
+);
+
+root.style.setProperty(
+    "--script-font",
+    wedding.fonts.script
+);
+
+
+
+// =============================
+// LOAD WEDDING CONTENT
+// =============================
+
+document.title =
+wedding.pageTitle;
+
+
+document.getElementById("coupleInitials").innerHTML =
+wedding.coupleInitials;
+
+
+document.getElementById("weddingDate").innerHTML =
+wedding.weddingDate;
+
+
+document.getElementById("welcomeTitle").innerHTML =
+wedding.welcome.title;
+
+
+document.getElementById("welcomeSubtitle").innerHTML =
+wedding.welcome.subtitle;
+
+
+document.getElementById("searchLabel").innerHTML =
+wedding.search.label;
+
+
+document.getElementById("guestName").placeholder =
+wedding.search.placeholder;
+
+
+document.getElementById("searchButton").innerHTML =
+wedding.buttons.default;
+
+
+
+
+// =============================
 // CONFIGURATION
 // =============================
 
@@ -375,8 +483,6 @@ async function findTable(){
 
 
 
-        // Same table guests
-
         const sameTable =
             data.party.filter(person =>
 
@@ -392,8 +498,6 @@ async function findTable(){
 
 
 
-
-        // Family/friends on other tables
 
         const otherTables =
             data.party.filter(person =>
