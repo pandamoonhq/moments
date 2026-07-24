@@ -34,13 +34,13 @@ Controls the couple information displayed on the page.
 Update:
 
     coupleNames:
-    "Amanda & Alex",
+    "Ally & Albert",
 
     coupleInitials:
     "A + A",
 
     weddingDate:
-    "25 SEPTEMBER 2027",
+    "19 SEPTEMBER 2026",
 
     venue:
     "Your Venue",
